@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const server = express();
 const BFF_PORT = process.env.PORT || process.env.BFF_PORT || 3001;
 
-server.listen(BFF_PORT, () => console.log(`Video games listening on port ${BFF_PORT}!`));
+server.listen(BFF_PORT, () => console.log(`Server Express listening on port ${BFF_PORT}!`));
 server.use(morgan('dev'));
 
 server.use('/', (req: Request, res: Response) => {

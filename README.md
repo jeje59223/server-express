@@ -15,7 +15,13 @@ POC for setting up an Express server
 
 - Node 16.15
 
-### `npm start`
+### Start project
+- `npm i`
+- `npm start`
+
+## Docker
+### build command
+- `docker build --pull --rm --progress=plain --no-cache -f "Dockerfile" -t serverexpress:latest "."`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
